@@ -63,7 +63,7 @@ Sponsor.init({
 }, {
   sequelize: db,
   modelName: 'Sponsor',
-  underscored: true,
+  tableName: 'sponsors',
 });
 
 Sponsor.belongsTo(Cnpj, { foreignKey: 'cnpjId', as: 'cnpjs' });

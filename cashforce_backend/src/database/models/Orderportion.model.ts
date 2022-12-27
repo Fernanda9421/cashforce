@@ -25,7 +25,7 @@ Orderportion.init({
 }, {
   sequelize: db,
   modelName: 'Orderportion',
-  underscored: true,
+  tableName: 'orderportions',
 });
 
 Orderportion.belongsTo(Order, { foreignKey: 'orderId', as: 'orders' });

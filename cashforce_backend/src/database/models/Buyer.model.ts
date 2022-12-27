@@ -59,7 +59,7 @@ Buyer.init({
 }, {
   sequelize: db,
   modelName: 'Buyer',
-  underscored: true,
+  tableName: 'buyers',
 });
 
 Buyer.belongsTo(Cnpj, { foreignKey: 'cnpjId', as: 'cnpjs' });

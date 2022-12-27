@@ -18,7 +18,7 @@ Cnpj.init({
 }, {
   sequelize: db,
   modelName: 'Cnpj',
-  underscored: true,
+  tableName: 'cnpjs',
 });
 
 export default Cnpj;

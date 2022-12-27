@@ -58,7 +58,7 @@ Order.init({
 }, {
   sequelize: db,
   modelName: 'Order',
-  underscored: true,
+  tableName: 'orders',
 });
 
 Order.belongsTo(Buyer, { foreignKey: 'buyerId', as: 'buyers' });

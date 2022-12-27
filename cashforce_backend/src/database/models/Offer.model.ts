@@ -36,7 +36,7 @@ Offer.init({
 }, {
   sequelize: db,
   modelName: 'Offer',
-  underscored: true,
+  tableName: 'offers',
 });
 
 Offer.belongsTo(Order, { foreignKey: 'orderId', as: 'orders' });

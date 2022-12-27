@@ -65,7 +65,7 @@ Provider.init({
 }, {
   sequelize: db,
   modelName: 'Provider',
-  underscored: true,
+  tableName: 'providers',
 });
 
 Provider.belongsTo(Cnpj, { foreignKey: 'cnpjId', as: 'cnpjs' });
