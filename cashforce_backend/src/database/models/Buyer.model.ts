@@ -54,7 +54,7 @@ Buyer.init({
   createdAt: { type: DataTypes.DATE, allowNull: false },
   updatedAt: { type: DataTypes.DATE, allowNull: false },
   cnpjId: { type: DataTypes.INTEGER },
-  confirm: { type: DataTypes.SMALLINT, defaultValue: 1 },
+  confirm: { type: DataTypes.TINYINT, defaultValue: 1 },
   email: { type: DataTypes.STRING },
 }, {
   sequelize: db,
