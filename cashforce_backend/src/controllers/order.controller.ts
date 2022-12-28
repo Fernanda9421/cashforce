@@ -17,6 +17,18 @@ class OrderController {
       next(error);
     }
   }
+
+  public async getByUserId(req:Request, res:Response, next:NextFunction):Promise<Response | void> {
+    try {
+      const { userId } = req.params;
+
+      const orders = await this.service.getByUserId(Number(userId));
+
+      return res.status(200).json(orders);
+    } catch (error) {
+      next(error);
+    }
+  }
 }
 
 export default OrderController;
