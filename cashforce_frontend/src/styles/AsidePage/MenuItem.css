@@ -1,0 +1,78 @@
+.container-menu-item {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 64px;
+  padding: 0px;
+  width: 18.46vw;
+}
+
+.selected {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 21px;
+  height: 64px;
+  padding: 0px;
+  width: 149px;
+}
+
+.box-selected {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 84px;
+  padding: 10px 0px;
+  width: 4px;
+}
+
+.line-selected {
+  background: #00ad8c;
+  border-radius: 4px;
+  height: 64px;
+  width: 4px;
+}
+
+.box-item {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  height: 44px;
+  padding: 0px;
+  width: 124px;
+}
+
+.icon-item {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 44px;
+  padding: 10px 0px;
+  width: 24px;
+}
+
+.box-text-item {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 44px;
+  padding: 10px 0px;
+  width: 85px;
+}
+
+.text-item {
+  align-items: center;
+  color: #00ad8c;
+  display: flex;
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  height: 18px;
+  line-height: 18px;
+  width: 85px;
+}
