@@ -1,0 +1,16 @@
+.container-hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  padding: 0px;
+  width: 18.46vw;
+}
+
+.box-logo {
+  height: 80px;
+  left: 24px;
+  position: absolute;
+  top: 25px;
+  width: 18.46vw;
+}
