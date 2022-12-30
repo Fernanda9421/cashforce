@@ -1,0 +1,19 @@
+aside {
+  height: 100vh;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 18.46vw;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 144px;
+  left: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 0px;
+  width: 18.46vw;
+}
