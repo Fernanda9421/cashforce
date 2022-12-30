@@ -16,6 +16,7 @@ class OrderService {
         { model: Buyer, as: 'buyers' },
         { model: Provider, as: 'providers' },
       ],
+      order: [['nNf', 'ASC'], ['emissionDate', 'ASC']],
     });
 
     return orders;
