@@ -21,6 +21,9 @@ SET time_zone = "+00:00";
 -- Banco de dados: `cashforce_v3`
 --
 
+CREATE DATABASE IF NOT EXISTS `cashforce_v3`;
+USE `cashforce_v3`;
+
 -- --------------------------------------------------------
 
 --
