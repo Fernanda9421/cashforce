@@ -1,0 +1,40 @@
+version: '3.9'
+services:
+  frontend:
+    build: ./cashforce_frontend
+    restart: 'on-failure'
+    ports:
+      - 5173:5173
+    container_name: app_frontend
+    command: ["/bin/bash", "-c", "sleep 5 && npm run dev"]
+    depends_on:
+      - backend
+  backend:
+    build: ./cashforce_backend
+    restart: 'on-failure'
+    ports:
+      - 3001:3001
+    container_name: app_backend
+    command: "npm start"
+    depends_on:
+      - mariadb
+    environment:
+      - DB_USER=root
+      - DB_PASSWORD=mariadb123
+      - DB_HOST=db
+      - DB_NAME=cashforce_v3
+      - DB_PORT=3306
+      - DB_DIALECT=mariadb
+  mariadb:
+    image: mariadb
+    container_name: db
+    ports:
+      - "3306:3306"
+    environment:
+      - MARIADB_ROOT_PASSWORD=mariadb123
+    volumes:
+      - data-volume:/var/lib/mariadb
+      - ./init:/docker-entrypoint-initdb.d
+
+volumes:
+  data-volume:
