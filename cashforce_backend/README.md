@@ -42,7 +42,7 @@
 ```
 
 - Ao rodar esse comando:
-  - o *script* para gerar o banco de dados e suas tabelas é executado, ficando disponível na `porta 3306`;
+  - o *script* para gerar o banco de dados e suas tabelas é executado, ficando disponível na `porta 3002`;
   - a API / *endpoints* ficam disponíveis na `porta 3001`;
   - a aplicação *web* fica disponível na `porta 5173`.
 
