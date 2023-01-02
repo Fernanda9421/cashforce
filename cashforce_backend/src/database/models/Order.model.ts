@@ -65,5 +65,6 @@ Order.belongsTo(Buyer, { foreignKey: 'buyerId', as: 'buyers' });
 Order.belongsTo(Provider, { foreignKey: 'providerId', as: 'providers' });
 Order.belongsTo(Cnpj, { foreignKey: 'cnpjId', as: 'cnpjs' });
 Order.belongsTo(User, { foreignKey: 'userId', as: 'users' });
+User.hasMany(Order, { foreignKey: 'userId', as: 'orders' });
 
 export default Order;
