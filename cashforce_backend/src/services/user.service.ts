@@ -1,3 +1,6 @@
+import Buyer from '../database/models/Buyer.model';
+import Order from '../database/models/Order.model';
+import Provider from '../database/models/Provider.model';
 import User from '../database/models/User.model';
 
 class UserService {
@@ -8,7 +11,18 @@ class UserService {
   }
 
   public async getById(id:number):Promise<User | null> {
-    const user = await User.findByPk(id);
+    const user = await User.findByPk(id, {
+      include:
+        {
+          model: Order,
+          where: { userId: id },
+          as: 'orders',
+          include: [
+            { model: Buyer, as: 'buyers' },
+            { model: Provider, as: 'providers' },
+          ],
+        },
+    });
 
     return user;
   }
