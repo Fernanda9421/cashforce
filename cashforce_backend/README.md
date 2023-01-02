@@ -52,7 +52,7 @@
 - ### **Visualização de todos os usuários cadastrados:**
 
 ```http
-  GET /user
+GET /user
 ```
 
 <details><summary>RETORNO DA REQUISIÇÃO</summary>
