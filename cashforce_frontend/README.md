@@ -42,6 +42,8 @@
   - a API / *endpoints* ficam disponíveis na `porta 3001`;
   - a aplicação *web* fica disponível na `porta 5173`.
 
+  > **Importante**: A aplicação web demora cerca de 60 segundos para ficar disponível para acesso!
+
 ## Funcionalidades
 
 ### Tela de exibição de notas fiscais:
