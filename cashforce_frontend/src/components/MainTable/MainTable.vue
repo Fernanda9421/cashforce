@@ -9,7 +9,8 @@ import "../../styles/MainTable/MainTable.css";
 </script>
 
 <template>
-  <table>
+  <p class="error" v-if="error === 'User not found!'">Usuário não encontrado</p>
+  <table v-else>
     <thead>
       <tr class="tr-head">
         <th>NOTA FISCAL</th>
@@ -36,7 +37,9 @@ import "../../styles/MainTable/MainTable.css";
         <td class="color td-status">
           {{ this.convertStatus(order.orderStatusBuyer) }}
         </td>
-        <button class="button">Dados do cedente</button>
+        <button @click="$router.push('/provider')" class="button">
+          Dados do cedente
+        </button>
       </tr>
     </tbody>
   </table>
@@ -48,6 +51,7 @@ export default defineComponent({
   data() {
     return {
       orders: [],
+      error: "",
       userId,
       convertDate,
       convertStatus,
@@ -57,13 +61,25 @@ export default defineComponent({
   methods: {
     async fetchOrders() {
       const ordersResponse = await axios.get(
-        `http://localhost:3001/order/${userId.userId}`
+        `http://localhost:3001/user/${userId.userId}`
       );
-      this.orders = ordersResponse.data;
+      this.orders = ordersResponse.data.orders;
+    },
+    setError(axiosError) {
+      if (axiosError !== "") {
+        this.error = axiosError;
+      } else {
+        this.error = "";
+      }
     },
   },
   async mounted() {
-    await this.fetchOrders();
+    try {
+      await this.fetchOrders();
+      this.setError("");
+    } catch (error) {
+      this.setError(error.response.data.message);
+    }
   },
 });
 </script>
