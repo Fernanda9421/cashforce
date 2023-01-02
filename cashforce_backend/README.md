@@ -49,7 +49,7 @@
 
 ## *API Reference*
 
-- ### **Visualização de todos os usuários cadastrados:**
+### **Visualização de todos os usuários cadastrados:**
 
 ```http
 GET /user
@@ -81,7 +81,7 @@ GET /user
 
 <br />
 
-- ### **Visualização do usuário pelo id:**
+### **Visualização do usuário pelo id:**
 
 ```http
 GET /user/:id
@@ -197,7 +197,7 @@ GET /user/:id
 </details>
 <br />
 
-- ### **Visualização dos compradores cadastrados:**
+### **Visualização dos compradores cadastrados:**
 
 ```http
 GET /buyer
@@ -241,7 +241,7 @@ GET /buyer
 </details>
 <br />
 
-- ### **Visualização dos Cnpjs cadastrados:**
+### **Visualização dos Cnpjs cadastrados:**
 
 ```http
 GET /cnpj
@@ -265,7 +265,7 @@ GET /cnpj
 </details>
 <br />
 
-- ### **Visualização dos pedidos cadastrados:**
+### **Visualização dos pedidos cadastrados:**
 
 ```http
 GET /order
@@ -307,7 +307,7 @@ GET /order
 </details>
 <br />
 
-- ### **Visualização dos fornecedores cadastrados:**
+### **Visualização dos fornecedores cadastrados:**
 
 ```http
 GET /provider
