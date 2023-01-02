@@ -29,7 +29,7 @@ services:
     image: mariadb
     container_name: db
     ports:
-      - "3306:3306"
+      - "3002:3306"
     environment:
       - MARIADB_ROOT_PASSWORD=mariadb123
     volumes:
