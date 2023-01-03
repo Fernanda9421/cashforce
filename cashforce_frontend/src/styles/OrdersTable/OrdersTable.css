@@ -103,3 +103,17 @@ td:nth-child(n + 5) {
 td:nth-child(n + 6) {
   font-size: 10px;
 }
+
+@media (min-width: 1293px) {
+  th {
+    width: 10em;
+  }
+
+  td {
+    width: 9.4em;
+  }
+
+  button {
+    left: 100em;
+  }
+}

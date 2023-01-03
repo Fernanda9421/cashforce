@@ -5,8 +5,8 @@ import OrdersTable from "../components/OrdersTable/OrdersTable.vue";
 </script>
 
 <template>
+  <AsidePage />
   <main>
-    <AsidePage />
     <HomeHeader />
     <OrdersTable />
   </main>
