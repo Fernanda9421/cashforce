@@ -3,18 +3,20 @@ import "../styles/NotFoundPage/NotFoundPage.css";
 </script>
 
 <template>
-  <div class="container-not-found">
-    <img
-      alt="Not found image"
-      src="@/assets/not-found.jpg"
-      width="400"
-      height="400"
-    />
-    <div class="box">
-      <p class="text">Página não encontrada</p>
+  <main class="container-not-found">
+    <figure>
+      <img
+        alt="Not found image"
+        src="@/assets/not-found.jpg"
+        width="400"
+        height="400"
+      />
+    </figure>
+    <section class="box">
+      <h1 class="text">Página não encontrada</h1>
       <button @click="$router.push({ name: 'home' })" class="goHome">
         Página Principal
       </button>
-    </div>
-  </div>
+    </section>
+  </main>
 </template>
