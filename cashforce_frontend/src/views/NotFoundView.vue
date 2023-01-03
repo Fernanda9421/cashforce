@@ -1,4 +1,4 @@
-<script setup>
+<script>
 import "../styles/NotFoundPage/NotFoundPage.css";
 </script>
 
