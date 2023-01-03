@@ -1,14 +1,14 @@
 <script setup>
-import MenuHeroVue from "./MenuHero.vue";
-import MenuItemVue from "./MenuItem.vue";
+import MenuHero from "./MenuHero.vue";
+import MenuList from "./MenuList.vue";
 import "../../styles/AsidePage/AsidePage.css";
 </script>
 
 <template>
   <aside>
-    <div class="container">
-      <MenuHeroVue />
-      <MenuItemVue />
-    </div>
+    <section class="container">
+      <MenuHero />
+      <MenuList />
+    </section>
   </aside>
 </template>

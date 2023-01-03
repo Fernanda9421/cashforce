@@ -1,4 +1,4 @@
-.container-menu-item {
+.container-menu-nav {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -7,7 +7,12 @@
   width: 18.46vw;
 }
 
-.selected {
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.list-item {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -42,6 +47,7 @@
   height: 44px;
   padding: 0px;
   width: 124px;
+  text-decoration: none;
 }
 
 .icon-item {

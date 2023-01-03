@@ -3,8 +3,8 @@ import "../../styles/AsidePage/MenuHero.css";
 </script>
 
 <template>
-  <div class="container-hero">
-    <div class="box-logo">
+  <section class="container-hero">
+    <figure class="box-logo">
       <img
         alt="Cashforce logo"
         class="logo"
@@ -12,6 +12,6 @@ import "../../styles/AsidePage/MenuHero.css";
         width="133"
         height="25"
       />
-    </div>
-  </div>
+    </figure>
+  </section>
 </template>
