@@ -1,13 +1,13 @@
 <script setup>
-import HomeHeaderVue from "../components/HomeHeader/HomeHeader.vue";
-import AsidePageVue from "../components/AsidePage/AsidePage.vue";
-import MainTableVue from "../components/MainTable/MainTable.vue";
+import HomeHeader from "../components/HomeHeader/HomeHeader.vue";
+import AsidePage from "../components/AsidePage/AsidePage.vue";
+import OrdersTable from "../components/OrdersTable/OrdersTable.vue";
 </script>
 
 <template>
   <main>
-    <AsidePageVue />
-    <HomeHeaderVue />
-    <MainTableVue />
+    <AsidePage />
+    <HomeHeader />
+    <OrdersTable />
   </main>
 </template>
